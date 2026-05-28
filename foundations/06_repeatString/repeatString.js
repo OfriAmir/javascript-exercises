@@ -1,3 +1,4 @@
+//version 1
 const repeatString = function(string, num) {
     if (num<0) return 'ERROR'
     let repeatedString = ''
@@ -8,7 +9,15 @@ const repeatString = function(string, num) {
     return repeatedString
 };
 
-console.log(repeatString('hey', 3))
+//version 2
+function repeatString2(str, num){
+    if (num < 0) return 'ERROR'
+    let newStr = ''
+    for (let i = 0; i < num; i++){
+        newStr += str
+    }
+    return newStr
+}
 
 // Do not edit below this line
 module.exports = repeatString;
