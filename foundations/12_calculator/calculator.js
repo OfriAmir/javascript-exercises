@@ -7,12 +7,12 @@ const subtract = function(a,b) {
 };
 
 const sum = function(arr) {
-  if (!arr) return 0
-	return arr.reduce((total, current) => total + current, 0)
+  if (arr.length == 0) return 0
+	return arr.reduce((total, current) => total + current)
 };
 
 const multiply = function(arr) {
-  if (!arr) return 0
+  if (arr.length == 0) return 0
   return arr.reduce((total, current) => total * current)
 };
 
